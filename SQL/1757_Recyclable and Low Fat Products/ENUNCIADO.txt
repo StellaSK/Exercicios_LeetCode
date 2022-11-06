@@ -1,0 +1,40 @@
+/*
+ENLISH:
+
+Write an SQL query to find the ids of products that are both low fat and recyclable.
+
+Return the result table in any order.
+
+The query result format is in the following the Output.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+PORTUGUÊS:
+
+Escreva uma consulta SQL para encontrar os IDs de produtos com baixo teor de gordura e recicláveis.
+
+Retorne a tabela de resultados em qualquer ordem.
+
+O formato do resultado da consulta está a seguir no Output.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+DATABASE:
+
+INPUT: 
+Products table:
++-------------+----------+------------+
+| product_id  | low_fats | recyclable |
++-------------+----------+------------+
+| 0           | Y        | N          |
+| 1           | Y        | Y          |
+| 2           | N        | Y          |
+| 3           | Y        | Y          |
+| 4           | N        | N          |
++-------------+----------+------------+
+
+OUTPUT: 
+
++-------------+
+| product_id  |
++-------------+
+| 1           |
+| 3           |
++-------------+
+*/
