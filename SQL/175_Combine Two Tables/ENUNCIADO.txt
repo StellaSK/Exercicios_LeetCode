@@ -1,0 +1,43 @@
+/*
+ENGLISH:
+
+Write an SQL query to report the first name, last name, city, and state of each person in the Person table. If the address of a personId is not present in the Address table, report null instead.
+
+Return the result table in any order.
+
+The query result format is in the following the Output.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+PORTUGUÊS:
+
+Escreva uma consulta SQL para relatar o nome, sobrenome, cidade e estado de cada pessoa na tabela Pessoa. Se o endereço de um personId não estiver presente na tabela Endereço, informe nulo.
+
+Retorne a tabela de resultados em qualquer ordem.
+
+O formato do resultado da consulta está a seguir no Output.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+DATABASE:
+
+INPUT:
+Person table:
++----------+----------+-----------+
+| personId | lastName | firstName |
++----------+----------+-----------+
+| 1        | Wang     | Allen     |
+| 2        | Alice    | Bob       |
++----------+----------+-----------+
+Address table:
++-----------+----------+---------------+------------+
+| addressId | personId | city          | state      |
++-----------+----------+---------------+------------+
+| 1         | 2        | New York City | New York   |
+| 2         | 3        | Leetcode      | California |
++-----------+----------+---------------+------------+
+
+OUTPUT:
++-----------+----------+---------------+----------+
+| firstName | lastName | city          | state    |
++-----------+----------+---------------+----------+
+| Allen     | Wang     | Null          | Null     |
+| Bob       | Alice    | New York City | New York |
++-----------+----------+---------------+----------+
+*/
